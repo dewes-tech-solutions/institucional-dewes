@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Privacidade — Dewes Tech Solutions</title>
+<meta name="description" content="Como a Dewes Tech Solutions trata dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei 13.709/2018)." />
+<meta name="theme-color" content="#0A0A0A" />
+<meta name="robots" content="index, follow" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A0A0A'/%3E%3Cpath fill='%23F5F5F5' d='M 12 9 L 15 9 L 21 16 L 15 23 L 11 23 Z'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      screens: { 'xs':'400px','sm':'640px','md':'768px','lg':'1024px','xl':'1280px','2xl':'1536px' },
+      extend: {
+        fontFamily: {
+          sans: ['Geist','Inter','system-ui','sans-serif'],
+          mono: ['"Geist Mono"','ui-monospace','monospace'],
+        },
+        colors: {
+          bg:'#0A0A0A', surface:'#121214', surface2:'#1A1A1C',
+          border:'#2A2A2C', borderHi:'#3A3A3C',
+          text:'#F5F5F5', textDim:'#D0D0D0',
+          muted:'#8A8A8A', mutedHi:'#A8A8A8',
+          silver:'#BEBEBE', silverLt:'#E8E8E8',
+        },
+        letterSpacing: { tightest:'-0.045em', tighter2:'-0.035em' },
+      },
+    },
+  }
+</script>
+
+<style>
+  :root { color-scheme: dark; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .chrome-text {
+    background: linear-gradient(135deg, #F8F8F8 0%, #FFFFFF 35%, #6E6E6E 55%, #BEBEBE 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .mesh-bg {
+    background:
+      radial-gradient(ellipse 70% 60% at 18% 12%, rgba(255,255,255,0.04), transparent 55%),
+      radial-gradient(ellipse 50% 40% at 50% 95%, rgba(255,255,255,0.02), transparent 65%);
+  }
+
+  .nav-scrolled {
+    backdrop-filter: saturate(140%) blur(16px);
+    -webkit-backdrop-filter: saturate(140%) blur(16px);
+    background-color: rgba(10, 10, 10, 0.72);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .btn-ghost {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: #F0F0F0;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .btn-ghost:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.20);
+  }
+
+  .prose h2 {
+    font-size: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: #ECECEC;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    scroll-margin-top: 6rem;
+  }
+  .prose h2:first-child { margin-top: 0; }
+  .prose h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #DCDCDC;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .prose p {
+    color: #B8B8B8;
+    line-height: 1.75;
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 768px) {
+    .prose p { font-size: 1rem; }
+  }
+  .prose ul {
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .prose ul li {
+    color: #B8B8B8;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .prose ul li { font-size: 1rem; }
+  }
+  .prose ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 0.4rem;
+    height: 1px;
+    background: #6E6E6E;
+  }
+  .prose strong { color: #F0F0F0; font-weight: 600; }
+  .prose a {
+    color: #E8E8E8;
+    text-decoration: underline;
+    text-decoration-color: rgba(232,232,232,0.3);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
+  }
+  .prose a:hover { text-decoration-color: rgba(232,232,232,0.8); }
+  .prose code {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-size: 0.875em;
+    background: rgba(255,255,255,0.06);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    color: #E0E0E0;
+  }
+
+  .tracking-brand { letter-spacing: -0.035em; }
+  .tracking-eyebrow { letter-spacing: 0.16em; }
+
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0A0A; }
+  ::-webkit-scrollbar-thumb { background: #2A2A2C; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: #3A3A3C; }
+</style>
+</head>
+
+<body class="min-h-screen antialiased">
+
+<!-- Logo sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="markGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#F8F8F8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#6E6E6E"/>
+      <stop offset="100%" stop-color="#BEBEBE"/>
+    </linearGradient>
+    <symbol id="pennant" viewBox="0 0 46 56">
+      <path fill="url(#markGrad)" fill-rule="evenodd"
+        d="M 4 0 L 18 0 L 42 27 L 18 54 L 0 54 Z
+           M 10 8 L 16 8 L 32 27 L 16 46 L 7 46 Z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 sm:gap-2.5" aria-label="Dewes Tech Solutions">
+        <svg width="20" height="24" viewBox="0 0 46 56" class="-translate-y-px sm:w-[22px] sm:h-[26px]"><use href="#pennant"/></svg>
+        <span class="font-semibold text-[15px] sm:text-[16px] tracking-brand text-textDim">dewes</span>
+        <span class="text-muted text-[15px] sm:text-[16px] tracking-brand font-normal hidden xs:inline font-mono">tech solutions</span>
+      </a>
+      <a href="index.html" class="btn-ghost inline-flex items-center gap-2 h-9 px-4 rounded-lg text-[12.5px] sm:text-[13px] font-medium">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span class="hidden sm:inline">Voltar ao site</span>
+        <span class="sm:hidden">Voltar</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="relative pt-28 sm:pt-36 pb-24 mesh-bg">
+  <article class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="mb-12 sm:mb-16">
+      <div class="font-mono text-[10.5px] sm:text-[11px] tracking-eyebrow text-silver uppercase mb-4">— Documento legal</div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.05] text-textDim" style="letter-spacing: -0.045em;">
+        Política de <br/>
+        <span class="chrome-text">Privacidade.</span>
+      </h1>
+      <p class="mt-6 text-[15px] sm:text-[16px] text-mutedHi leading-relaxed">
+        Como tratamos dados pessoais em conformidade com a <strong class="text-text font-semibold">Lei Geral de Proteção de Dados</strong> (LGPD — Lei nº 13.709/2018).
+      </p>
+      <p class="mt-4 font-mono text-[12px] sm:text-[13px] text-muted">
+        Última atualização: abril de 2026 · vigência imediata
+      </p>
+    </div>
+
+    <!-- Table of contents -->
+    <nav class="mb-14 sm:mb-16 p-6 rounded-2xl border border-border bg-surface/40">
+      <div class="font-mono text-[10.5px] sm:text-[11px] tracking-eyebrow text-silver uppercase mb-4">— Conteúdo</div>
+      <ol class="grid sm:grid-cols-2 gap-x-6 gap-y-2 font-mono text-[13px] sm:text-[13.5px] text-mutedHi">
+        <li><a href="#controlador" class="hover:text-text transition-colors">01 — Quem somos</a></li>
+        <li><a href="#encarregado" class="hover:text-text transition-colors">02 — Encarregado (DPO)</a></li>
+        <li><a href="#dados" class="hover:text-text transition-colors">03 — Dados que coletamos</a></li>
+        <li><a href="#finalidades" class="hover:text-text transition-colors">04 — Para que usamos</a></li>
+        <li><a href="#bases-legais" class="hover:text-text transition-colors">05 — Bases legais</a></li>
+        <li><a href="#compartilhamento" class="hover:text-text transition-colors">06 — Compartilhamento</a></li>
+        <li><a href="#retencao" class="hover:text-text transition-colors">07 — Por quanto tempo</a></li>
+        <li><a href="#cookies" class="hover:text-text transition-colors">08 — Cookies</a></li>
+        <li><a href="#direitos" class="hover:text-text transition-colors">09 — Seus direitos</a></li>
+        <li><a href="#seguranca" class="hover:text-text transition-colors">10 — Segurança</a></li>
+        <li><a href="#transferencia-internacional" class="hover:text-text transition-colors">11 — Transferência internacional</a></li>
+        <li><a href="#alteracoes" class="hover:text-text transition-colors">12 — Alterações</a></li>
+      </ol>
+    </nav>
+
+    <div class="prose">
+
+      <h2 id="controlador">01 — Quem somos</h2>
+      <p>
+        O controlador dos dados pessoais tratados neste site é a <strong>Dewes Tech Solutions</strong>, pessoa jurídica de direito privado inscrita no CNPJ sob o número <code>65.292.248/0001-19</code>, sediada no Brasil, atuando nacional e internacionalmente na prestação de serviços de consultoria em engenharia de software.
+      </p>
+      <p>
+        Para efeitos desta política, "nós", "a Dewes Tech" ou "a empresa" referem-se ao controlador acima.
+      </p>
+
+      <h2 id="encarregado">02 — Encarregado pelo tratamento de dados (DPO)</h2>
+      <p>
+        Conforme exigido pelo artigo 41 da LGPD, foi designado um Encarregado (Data Protection Officer) responsável por atuar como canal de comunicação entre o controlador, os titulares de dados e a Autoridade Nacional de Proteção de Dados (ANPD).
+      </p>
+      <p>
+        <strong>Encarregado:</strong> Cristiano Dewes<br/>
+        <strong>Contato:</strong> <a href="mailto:cristiano@dewestechsolutions.com.br">cristiano@dewestechsolutions.com.br</a>
+      </p>
+
+      <h2 id="dados">03 — Quais dados pessoais coletamos</h2>
+      <p>Coletamos apenas os dados estritamente necessários para os fins descritos nesta política:</p>
+
+      <h3>Dados fornecidos voluntariamente por você</h3>
+      <ul>
+        <li>Endereço de e-mail, nome e conteúdo da mensagem, quando você nos escreve por e-mail (link <code>mailto:</code>) ou WhatsApp.</li>
+        <li>Qualquer outra informação que você opte por incluir voluntariamente em comunicações conosco.</li>
+      </ul>
+
+      <h3>Dados coletados automaticamente</h3>
+      <ul>
+        <li>Endereço IP, tipo de navegador, sistema operacional e páginas visitadas — registrados de forma padrão pelo provedor de hospedagem do site, em logs de servidor.</li>
+        <li>Caso venhamos a adotar ferramentas de análise de tráfego no futuro, utilizaremos exclusivamente soluções que respeitam a privacidade por padrão, sem cookies identificadores nem fingerprinting — como <strong>Plausible Analytics</strong> ou <strong>Umami</strong>. Atualizaremos esta política antes da implementação.</li>
+      </ul>
+
+      <h3>Dados que NÃO coletamos</h3>
+      <ul>
+        <li>Não usamos cookies de rastreamento, pixels de mídia social ou ferramentas de publicidade comportamental.</li>
+        <li>Não coletamos dados sensíveis (origem racial, convicção religiosa, opinião política, saúde, vida sexual, dados biométricos ou genéticos).</li>
+        <li>Não coletamos dados de crianças ou adolescentes. Nosso público é exclusivamente profissional (B2B).</li>
+      </ul>
+
+      <h2 id="finalidades">04 — Para que usamos seus dados</h2>
+      <p>Os dados pessoais tratados pela Dewes Tech são utilizados exclusivamente para:</p>
+      <ul>
+        <li>Responder a contatos, solicitações de orçamento e dúvidas que você nos envia.</li>
+        <li>Avaliar o fit técnico e comercial de potenciais projetos de consultoria.</li>
+        <li>Gerenciar e executar contratos quando houver prestação de serviços efetiva.</li>
+        <li>Cumprir obrigações legais, regulatórias e fiscais aplicáveis à empresa.</li>
+        <li>Garantir a segurança, a integridade e o funcionamento adequado do site.</li>
+      </ul>
+
+      <h2 id="bases-legais">05 — Bases legais para o tratamento</h2>
+      <p>Tratamos dados pessoais apenas quando amparados por uma das hipóteses legais previstas no artigo 7º da LGPD:</p>
+      <ul>
+        <li><strong>Execução de contrato</strong> — quando há contratação efetiva de serviços e o tratamento é necessário para cumprir o acordo.</li>
+        <li><strong>Cumprimento de obrigação legal ou regulatória</strong> — obrigações fiscais, contábeis e trabalhistas, por exemplo.</li>
+        <li><strong>Legítimo interesse</strong> — para responder a contatos comerciais enviados voluntariamente e operar o site com segurança, sempre respeitando os direitos fundamentais do titular.</li>
+        <li><strong>Consentimento</strong> — quando aplicável, como no futuro uso de analytics ou comunicações não solicitadas.</li>
+      </ul>
+
+      <h2 id="compartilhamento">06 — Com quem compartilhamos</h2>
+      <p>A Dewes Tech <strong>não vende, aluga nem negocia</strong> dados pessoais. Compartilhamos informações apenas com:</p>
+      <ul>
+        <li><strong>Provedores técnicos essenciais</strong> — serviços de hospedagem, e-mail corporativo (Microsoft 365), rede de distribuição de conteúdo (Cloudflare) e ferramentas de comunicação. Todos contratualmente obrigados a proteger seus dados.</li>
+        <li><strong>Autoridades públicas</strong> — quando obrigadas por lei, decisão judicial ou requisição administrativa formal.</li>
+        <li><strong>Eventuais parceiros em projetos</strong> — apenas com seu consentimento explícito e quando o projeto em si envolver terceiros contratados por você.</li>
+      </ul>
+
+      <h2 id="retencao">07 — Por quanto tempo armazenamos</h2>
+      <p>Retemos seus dados apenas pelo tempo necessário às finalidades descritas:</p>
+      <ul>
+        <li><strong>Comunicações comerciais sem contrato</strong> — até 24 meses após o último contato, para permitir retomada futura da conversa.</li>
+        <li><strong>Contratos em execução</strong> — durante a vigência do contrato e pelos prazos legais aplicáveis após o encerramento (obrigações fiscais, por exemplo, até 5 anos).</li>
+        <li><strong>Logs de servidor</strong> — prazo definido pelo provedor de hospedagem, tipicamente entre 7 e 90 dias.</li>
+      </ul>
+      <p>Ao final desses prazos — ou mediante solicitação de exclusão pelo titular — os dados são eliminados ou anonimizados de forma irreversível, salvo quando a manutenção for exigida por obrigação legal.</p>
+
+      <h2 id="cookies">08 — Cookies e tecnologias similares</h2>
+      <p>Atualmente, este site <strong>não utiliza cookies</strong> além daqueles estritamente necessários ao funcionamento técnico (por exemplo, cookies de sessão definidos pelo provedor de hospedagem ou pela Cloudflare para proteção contra fraude). Não há cookies de publicidade, rastreamento comportamental ou analytics.</p>
+      <p>Caso venhamos a adotar ferramentas de análise no futuro, priorizaremos soluções sem cookies ou com cookies estritamente agregados, sem identificação individual. Atualizaremos esta política e, se aplicável, solicitaremos seu consentimento antes de qualquer mudança.</p>
+
+      <h2 id="direitos">09 — Seus direitos como titular</h2>
+      <p>A LGPD garante a você, titular dos dados, uma série de direitos que podem ser exercidos gratuitamente, a qualquer momento, mediante solicitação ao encarregado:</p>
+      <ul>
+        <li><strong>Confirmação e acesso</strong> — saber se tratamos seus dados e obter cópia deles.</li>
+        <li><strong>Correção</strong> — solicitar a atualização de dados incompletos, inexatos ou desatualizados.</li>
+        <li><strong>Anonimização, bloqueio ou eliminação</strong> — de dados desnecessários, excessivos ou tratados em desconformidade com a lei.</li>
+        <li><strong>Portabilidade</strong> — receber seus dados em formato estruturado para transferi-los a outro fornecedor, quando aplicável.</li>
+        <li><strong>Eliminação</strong> — de dados tratados com base no seu consentimento, observadas as exceções legais.</li>
+        <li><strong>Informação sobre compartilhamento</strong> — saber com quais entidades seus dados foram compartilhados.</li>
+        <li><strong>Revogação do consentimento</strong> — a qualquer momento, para os tratamentos baseados em consentimento.</li>
+        <li><strong>Oposição</strong> — opor-se a tratamentos realizados com fundamento em dispensa de consentimento que considere irregulares.</li>
+      </ul>
+      <p>Para exercer qualquer desses direitos, entre em contato com o encarregado pelo e-mail <a href="mailto:cristiano@dewestechsolutions.com.br">cristiano@dewestechsolutions.com.br</a>. Responderemos em até <strong>15 dias corridos</strong>, nos termos da LGPD.</p>
+      <p>Caso não fique satisfeito com a resposta, você tem direito de peticionar junto à <strong>Autoridade Nacional de Proteção de Dados (ANPD)</strong>, por meio do canal oficial em <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">gov.br/anpd</a>.</p>
+
+      <h2 id="seguranca">10 — Segurança dos dados</h2>
+      <p>Adotamos medidas técnicas e organizacionais proporcionais ao volume e sensibilidade dos dados tratados:</p>
+      <ul>
+        <li>Transmissão de dados via conexão criptografada (HTTPS/TLS) em todo o site.</li>
+        <li>Acesso a contas corporativas protegido por autenticação multifator (MFA).</li>
+        <li>Uso de provedores idôneos, auditados e com certificações reconhecidas (Microsoft 365, Cloudflare) para hospedagem e comunicação.</li>
+        <li>Princípio do menor privilégio no acesso interno aos dados.</li>
+        <li>Revisão periódica das práticas de segurança e atualização de credenciais.</li>
+      </ul>
+      <p>Nenhum sistema é 100% invulnerável. Em caso de incidente de segurança que implique risco ou dano relevante aos titulares, comunicaremos os afetados e a ANPD nos prazos e na forma exigidos pela LGPD.</p>
+
+      <h2 id="transferencia-internacional">11 — Transferência internacional de dados</h2>
+      <p>Alguns provedores técnicos utilizados pela Dewes Tech (como Microsoft 365 e Cloudflare) possuem infraestrutura distribuída em múltiplos países. Isso significa que seus dados podem ser processados em servidores fora do Brasil.</p>
+      <p>Essas transferências são realizadas apenas com fornecedores que adotam padrões reconhecidos de proteção de dados (certificações ISO 27001, SOC 2, cláusulas contratuais padrão e, quando aplicável, em países com nível adequado de proteção reconhecido pela ANPD), conforme o capítulo V da LGPD.</p>
+
+      <h2 id="alteracoes">12 — Alterações nesta política</h2>
+      <p>Esta política pode ser atualizada a qualquer momento para refletir mudanças legais, regulatórias ou em nossas práticas operacionais. A data da última atualização está no topo do documento.</p>
+      <p>Alterações relevantes — especialmente aquelas que ampliem o tratamento ou modifiquem as finalidades — serão comunicadas com antecedência razoável, por meio de destaque no próprio site ou por e-mail, quando houver contato prévio.</p>
+
+      <h2 id="contato">Contato do Encarregado</h2>
+      <p>
+        Para qualquer questão relacionada ao tratamento dos seus dados pessoais — exercício de direitos, dúvidas, reclamações ou sugestões — entre em contato:
+      </p>
+      <p>
+        <strong>Dewes Tech Solutions</strong> — CNPJ 65.292.248/0001-19<br/>
+        <strong>Encarregado:</strong> Cristiano Dewes<br/>
+        <strong>E-mail:</strong> <a href="mailto:cristiano@dewestechsolutions.com.br">cristiano@dewestechsolutions.com.br</a>
+      </p>
+
+    </div>
+
+    <!-- Footer nav -->
+    <div class="mt-20 pt-10 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-[12px] sm:text-[13px] text-muted font-mono">
+      <a href="index.html" class="hover:text-text transition-colors inline-flex items-center gap-2">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        voltar ao site principal
+      </a>
+      <span>© 2026 Dewes Tech Solutions · CNPJ 65.292.248/0001-19</span>
+    </div>
+
+  </article>
+</main>
+
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 8) nav.classList.add('nav-scrolled');
+    else nav.classList.remove('nav-scrolled');
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Dewes Tech Solutions — robots.txt
+# https://dewestechsolutions.com.br
+
+User-agent: *
+Allow: /
+
+# Prevent indexing of common admin/dev paths that might exist in the future
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_*
+Disallow: /.well-known/
+
+# Sitemap location
+Sitemap: https://dewestechsolutions.com.br/sitemap.xml
+
+# Crawl-delay is not strictly honored by Google but respected by some crawlers
+Crawl-delay: 1

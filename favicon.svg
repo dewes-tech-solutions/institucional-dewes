@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="chrome" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#F8F8F8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#6E6E6E"/>
+      <stop offset="100%" stop-color="#BEBEBE"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded graphite tile -->
+  <rect width="32" height="32" rx="7" fill="#0A0A0A"/>
+  <!-- Pennant scaled to fit with padding -->
+  <g transform="translate(10, 8) scale(0.27)">
+    <path fill="url(#chrome)" fill-rule="evenodd"
+      d="M 4 0 L 18 0 L 42 27 L 18 54 L 0 54 Z
+         M 10 8 L 16 8 L 32 27 L 16 46 L 7 46 Z"/>
+  </g>
+</svg>

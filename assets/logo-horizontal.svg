@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 80" width="560" height="80" fill="none">
+  <defs>
+    <linearGradient id="chrome" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#F8F8F8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="55%" stop-color="#6E6E6E"/>
+      <stop offset="100%" stop-color="#BEBEBE"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0, 8) scale(1.14)">
+    <path fill="url(#chrome)" fill-rule="evenodd"
+      d="M 4 0 L 18 0 L 42 27 L 18 54 L 0 54 Z
+         M 10 8 L 16 8 L 32 27 L 16 46 L 7 46 Z"/>
+  </g>
+
+  <text x="72" y="54" font-size="40">
+    <tspan font-family="Geist, Inter, 'Helvetica Neue', Arial, sans-serif"
+           font-weight="600" letter-spacing="-1.8" fill="#F0F0F0">dewes</tspan><tspan
+           dx="16"
+           font-family="'Geist Mono', 'JetBrains Mono', 'Courier New', monospace"
+           font-weight="400" letter-spacing="-1.4" fill="#8A8A8A">tech solutions</tspan>
+  </text>
+</svg>
