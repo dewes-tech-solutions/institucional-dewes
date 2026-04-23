@@ -4,7 +4,7 @@
 
 <br/>
 
-### Fábrica de software boutique, founder-led.
+### Software sob medida, direto com quem arquiteta.
 **Arquitetura, desenvolvimento, cloud e observabilidade — entrega direta, sem camadas de intermediação.**
 
 [🌐 dewestechsolutions.com.br](https://dewestechsolutions.com.br) · [📧 contato](mailto:cristiano@dewestechsolutions.com.br) · [💬 WhatsApp](https://wa.me/5551996033927)
